@@ -1,0 +1,31 @@
+# Olá esse é um codigo feito por Gustavo para o ajudar nos calculos financeiros de Juros simples, composto e no Sac(sistema de amortização constante)
+print('- ' * 70)
+#menu
+print('Olá, usuario na nossa calculadora financeira digite:\n 1 para juros simples \n 2 para juros compostos \n 3 para Sac')
+print("instruções basica: não coloque virgula(,) use ponto(.) para identificar as casas decimais \n não coloque o simbolo de porcentagem o sistema já reconhece como porcentagem naturalmente")
+print('- ' * 70)
+menu = 0
+while menu == 0:
+     print('-' * 70 )
+     menu = int(input('Digite o Calculo que voce desejar fazer:'))
+     print('-' * 70)
+while menu == 1:
+     print('-' * 70)
+     print("Você escolheu juros simples")
+    val = float(input("Digite o valor que será calculado: R$: "))
+    juros_s = float(input("Digite o Juros que será cobrado: "))
+    soma = (val * (juros_s  / 100))  + val
+    print(f" O valor que você irá pagar é R$:{soma}")
+    menu = int(input("Você fez o calculo de juros simples, Deseja continua? \n(se sim Digite 1, se não digite 0 para voltar ao menu)"))
+    print('-' * 70)
+while menu == 2:
+    print('-' * 70)
+    print('Você escolheu o Juros composto')
+    val = float(input("Digite o valor que será calculado: R$: "))
+     juros_c = float(input("Digite o Juros que será cobrado: "))
+     temp = input("O juros será ao ano(a.a) ou ao mês(a.m)?: ")
+     if temp == a.a:
+         print('Ok o juros será ao ano')
+         tempo = int(input('Quantos anos vão ser necessario para pagar:  '))
+         soma = (val * juros_c  /100) * tempo + val
+         print("O total a ser pago pela quantidade de tempo será {soma}")
