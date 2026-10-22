@@ -29,3 +29,8 @@ while menu == 2:
          tempo = int(input('Quantos anos vão ser necessario para pagar:  '))
          soma = (val * juros_c  /100) * tempo + val
          print("O total a ser pago pela quantidade de tempo será {soma}")
+     elif temp == a.m:
+         print('Ok o juros será ao mês')
+         tempo = int(input('Quantos meses vão ser necessario para pagar:  '))
+         soma = (val * juros_c  /100 * tempo )  + val
+         print("O total a ser pago pela quantidade de tempo será {soma}")
